@@ -3,7 +3,7 @@ import dotenv from "dotenv"
 
 dotenv.config()
 
-const url = `${process.env.database_url}/${process.env.db_name}?retryWrites=true&w=majority&appName=pmsdb/pms`
+const url = process.env.database_url
 
 const conenctionOptions = {
   // serverSelectionTimeoutMS: 5000,
